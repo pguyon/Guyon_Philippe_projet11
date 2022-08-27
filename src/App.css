@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     padding: 40px 100px 0 100px;
+ }
+
+
+@media screen and (max-width: 640px){
+    body {
+        padding: 20px;
+    }
 }
+
+  

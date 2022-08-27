@@ -33,3 +33,20 @@
     color: #FF6060;
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 640px){
+    .header__img{
+        width: 145px;
+        height: 47px;
+    }
+
+    .header-wrapper li {
+        width: 140px;
+        height: 17px;
+    }
+
+    .header__link{
+        font-size: 12px;
+    } 
+}
