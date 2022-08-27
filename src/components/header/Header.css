@@ -35,7 +35,7 @@
 }
 
 .header__link__active {
-    text-decoration: underline #FF6060;
+    border-bottom: 1px solid #FF6060;
 }
 
 @media screen and (max-width: 640px){
