@@ -15,7 +15,7 @@
     height: 68px;
 }
 
-.header-wrapper li {
+.header-wrapper nav {
     display: flex;
     justify-content: space-between;
     width: 309px;
@@ -34,6 +34,9 @@
     text-decoration: none;
 }
 
+.header__link__active {
+    text-decoration: underline #FF6060;
+}
 
 @media screen and (max-width: 640px){
     .header__img{
