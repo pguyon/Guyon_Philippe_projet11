@@ -1,10 +1,10 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import About from "./pages/About";
-import Error from "./pages/Error";
+import About from "./pages/about/About";
+import Error from "./pages/error/Error";
 
 function App() {
     return (
