@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
-.header-wrapper{
+.header__wrapper{
     display: flex;
     width: 100%;
     height: 68px;
@@ -15,7 +15,7 @@
     height: 68px;
 }
 
-.header-wrapper nav {
+.header__wrapper nav {
     display: flex;
     justify-content: space-between;
     width: 309px;
@@ -44,7 +44,7 @@
         height: 47px;
     }
 
-    .header-wrapper li {
+    .header__wrapper nav {
         width: 140px;
         height: 17px;
     }

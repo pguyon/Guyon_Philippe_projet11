@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Banner from '../../UI/banner/Banner';
 
 const Home = () => {
     const [logement, setLogement] = useState([]);
@@ -22,9 +23,7 @@ const Home = () => {
     
     console.log(logement);
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+       <Banner/>
     );
 }
 

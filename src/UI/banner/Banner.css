@@ -1,0 +1,38 @@
+.banner__wrapper {
+    border-radius: 25px;
+    text-align: center;
+    height: 223px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    margin-top: 63px;
+}
+
+
+.banner__wrapper::before{
+    background-color: rgba(0,0,0,.3);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner__title {
+    font-size: 48px;
+    font-weight: 400;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.banner__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 43%;
+    width: 100%;
+}

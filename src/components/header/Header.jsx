@@ -9,7 +9,7 @@ const Header = () => {
     const activeLink = useLocation();
 
     return (
-        <div className='header-wrapper'>
+        <div className='header__wrapper'>
             <img className='header__img' src={logo}
                 alt=''></img>
             <nav>
