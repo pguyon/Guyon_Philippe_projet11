@@ -1,0 +1,6 @@
+.card__content {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: rebeccapurple;
+}

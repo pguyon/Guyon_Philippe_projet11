@@ -1,12 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css'
 
-const Card = () => {
+const Card = ({picture, pictureAlt, title}) => {
     return (
-        <div>
-            
-        </div>
+        
+            <div className='card__content'>
+
+            </div>
+        
     );
+}
+
+Card.propTypes = {
+    picture: PropTypes.string,
+    pictureAlt: PropTypes.string,
+    title: PropTypes.string
 }
 
 export default Card;

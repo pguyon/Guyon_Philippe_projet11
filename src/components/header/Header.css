@@ -1,13 +1,9 @@
-
-
-
 .header__wrapper{
     display: flex;
-    width: 100%;
+    width: 1240px;
     height: 68px;
     justify-content: space-between;
-    margin: 0;
-    
+    margin: auto;
 }
 
 .header__img{

@@ -5,7 +5,8 @@
     overflow: hidden;
     position: relative;
     color: white;
-    margin-top: 63px;
+    margin: 63px auto 0;
+    width: 1240px;
 }
 
 

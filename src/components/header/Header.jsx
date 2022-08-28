@@ -17,7 +17,7 @@ const Header = () => {
                 <li className={activeLink.pathname === '/' ? "header__link__active active" : "header__link"}>Accueil</li>
                 </Link>
                 <Link className="header__link" to="/about">
-                <li className={activeLink.pathname === '/about' ? "header__link__active active" : "header__link"}>A propos</li>
+                <li className={activeLink.pathname === '/about' ? "header__link__active active" : "header__link"}>A Propos</li>
                 </Link>
             </nav>
         </div>
