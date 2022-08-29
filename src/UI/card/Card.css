@@ -1,6 +1,25 @@
 .card__content {
+    position: relative;
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    background: rebeccapurple;
+}
+
+.card__img{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    filter: brightness(75%);
+}
+
+
+
+.card__title {
+    font-size: 18px;
+    color: white;
+    bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    left: 20px;
+    position: absolute;
 }

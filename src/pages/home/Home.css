@@ -1,10 +1,16 @@
 .section__wrapper {
-    display: flex;
-    padding: 56px 50px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: #F7F7F7;
-    border-radius: 25px;
-    margin: 50px auto 0;
-    width: 1240px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  column-gap: 60px;
+  row-gap: 50px;
+  width: min(100%, 1240px);
+  margin: 43px auto;
+  padding: 50px;
+  border-radius: 25px;
+  background: #F7F7F7;
+}
+
+.section__link{
+    text-decoration: none;
 }

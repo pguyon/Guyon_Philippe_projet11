@@ -27,7 +27,7 @@ const Home = () => {
             <Banner/>
             <section className='section__wrapper'> {
                 logement.map((item) => (
-                    <Link key={
+                    <Link className='section__link' key={
                             item.id
                         }
                         to={

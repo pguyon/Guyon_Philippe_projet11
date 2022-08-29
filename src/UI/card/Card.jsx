@@ -5,9 +5,10 @@ import './Card.css'
 const Card = ({picture, pictureAlt, title}) => {
     return (
         
-            <div className='card__content'>
-
-            </div>
+            <article className='card__content'>
+                <img className='card__img' src={picture} alt={pictureAlt}/>                
+                     <h2 className='card__title'>{title}</h2>
+            </article>
         
     );
 }
