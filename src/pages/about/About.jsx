@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
+import './About.css'
 
 const About = () => {
+    const [show, setShow] = useState(false);
+
+
+const toggle = () => {
+    setShow(!show)
+}
+
+
     return (
         <div>
-            <h1>About</h1>
+            {show ? <h1>About</h1> : ''}
+            
+            <button onClick={toggle}>Click</button>
         </div>
     );
 }
