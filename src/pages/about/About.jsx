@@ -1,22 +1,21 @@
-import React, {useState} from 'react';
-import './About.css'
+import React from 'react';
+import './About.css';
 import Banner from '../../UI/banner/Banner';
+import AboutData from '../../data/AboutData.js'
+import Dropdown from '../../UI/dropdown/Dropdown';
 
 const About = () => {
-    const [show, setShow] = useState(false);
+    
 
-
-const toggle = () => {
-    setShow(!show)
-}
-
+console.log(AboutData);
 
     return (
-        <div>
+        <main>
             <Banner />
-            {show ? <h1>About</h1> : ''}
-            <button onClick={toggle}>Click</button>
-        </div>
+            {AboutData.map((item, index) => (
+        <Dropdown key={item[0] + index} title={item[0]} description={item[1]} />
+      ))}
+        </main>
     );
 }
 
