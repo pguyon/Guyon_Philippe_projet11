@@ -11,8 +11,11 @@ const Dropdown = ({title, description }) => {
 
     return (
         <div>
-             <button onClick={toggle}>{title}</button>
-            {show ? <p>{description}</p> : ''}
+            <div className='dropdown__title'>
+                <h2>{title}</h2>
+             <button onClick={toggle}>+</button>
+            </div>
+            {show ? <div className='dropdown__description'><p>{description}</p></div> : ''}
         </div>
     );
 }

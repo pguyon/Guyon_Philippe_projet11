@@ -1,0 +1,27 @@
+.dropdown__title{
+    display: flex;
+    width: 1023px;
+    height: 47px;
+    background: #FF6060;
+    border-radius: 5px;
+    margin: 31px auto 0;
+}
+
+.dropdown__title button {
+    height: 24px;
+    width: 14px;
+}
+
+
+.dropdown__description {
+    width: 1023px;
+    background: #F7F7F7;
+    margin: auto;
+    border-radius: 5px;
+    padding: 18px 37px 27px 19px;
+}
+
+.dropdown__description p {
+    color: #FF6060;
+    font-size: 24px;
+}
