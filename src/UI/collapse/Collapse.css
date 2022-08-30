@@ -37,6 +37,19 @@
 }
 
 .collapse__description p {
+    animation: appear 0.5s;
     color: #FF6060;
     font-size: 24px;
 }
+
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
