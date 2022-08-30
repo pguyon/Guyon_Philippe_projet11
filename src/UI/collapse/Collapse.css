@@ -1,4 +1,4 @@
-.dropdown__title{
+.collapse__title{
     display: flex;
     justify-content: space-between;
     width: 1023px;
@@ -9,7 +9,7 @@
     padding: 6px 0 7px 18px;
 }
 
-.dropdown__title button {
+.collapse__title button {
    cursor: pointer;
    margin-right: 10px;
    background: transparent;
@@ -19,7 +19,7 @@
    margin-top: 5px;
 }
 
-.dropdown__title h2 {
+.collapse__title h2 {
     font-size: 24px;
     color: white;
     line-height: 34px;
@@ -28,7 +28,7 @@
 }
 
 
-.dropdown__description {
+.collapse__description {
     width: 1023px;
     background: #F7F7F7;
     margin: auto;
@@ -36,7 +36,7 @@
     padding: 18px 37px 27px 19px;
 }
 
-.dropdown__description p {
+.collapse__description p {
     color: #FF6060;
     font-size: 24px;
 }
