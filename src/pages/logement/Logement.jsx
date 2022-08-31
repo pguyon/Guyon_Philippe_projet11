@@ -18,11 +18,16 @@ const Logement = () => {
       }, [id])
         
          const house = logement.filter((item) => item.id === id);
+         console.log(house);
 
     return (
         <div>
             {house.map((item) => (
-                <h1 key={item.id}>{item.title}</h1>
+                <div key={item.id}>
+                    <h1>{item.title}</h1>
+                    <p>{item.location}</p>
+                </div>
+               
             ))}
         </div>
     );
