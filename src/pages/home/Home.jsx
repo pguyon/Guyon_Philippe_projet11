@@ -20,8 +20,7 @@ const Home = () => {
         })
 
     }, [])
-
-    console.log(logement);
+    
     return (
         <main>
             <Banner/>
