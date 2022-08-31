@@ -1,0 +1,17 @@
+.carousel__wrapper {
+    margin: auto;
+    width: 1240px;
+}
+
+.carousel__content {
+    display: flex;
+
+}
+
+
+.carousel__img {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
