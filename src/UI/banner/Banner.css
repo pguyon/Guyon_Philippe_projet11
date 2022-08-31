@@ -6,7 +6,7 @@
     position: relative;
     color: white;
     margin: 63px auto 0;
-    width: 1240px;
+    max-width: 1240px;
 }
 
 
@@ -24,7 +24,6 @@
     font-size: 48px;
     font-weight: 400;
     position: absolute;
-    text-align: center;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -36,4 +35,17 @@
     object-fit: cover;
     object-position: 50% 43%;
     width: 100%;
+}
+
+@media screen and (max-width: 640px){
+   .banner__wrapper {
+    height: 111px;
+    padding-left: 16px;
+   } 
+
+  .banner__title{
+    font-size: 24px;
+    text-align: left;
+    width: 217px;
+  }
 }

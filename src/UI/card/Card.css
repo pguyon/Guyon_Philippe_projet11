@@ -23,3 +23,17 @@
     left: 20px;
     position: absolute;
 }
+
+@media screen and (max-width: 640px) {
+    .card__content {
+        width: 335px;
+        height: 225px;
+        margin: 20px auto 0;
+    }
+
+    .card__img {
+        width: 335px;
+        height: 225px;
+    }
+    
+}
