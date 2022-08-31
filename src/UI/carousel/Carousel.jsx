@@ -36,6 +36,9 @@ const Carousel = ({pictures}) => {
                 <div className='carousel__content'>
                     <button onClick={handleClickLeft}>+</button>
                     <img className='carousel__img' src={pictures[currentImg - 1]} alt=''/>
+                    <div>
+                        {currentImg}/{pictures.length}
+                    </div>
                     <button onClick={handleClickRight}>-</button>
                 </div>
         </div>
