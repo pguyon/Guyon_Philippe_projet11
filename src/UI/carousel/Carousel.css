@@ -34,7 +34,15 @@
 .arrow__right {
     position: absolute;
     top: 41%;
-    right: 10px;
+    right: 0;
+}
+
+.carousel__counter {
+    position: absolute;
+    left: 50%;
+    top: 357px;
+    color: #ffffff;
+    font-size: 18px;
 }
 
 
