@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom'
 import './Logement.css'
 import Carousel from '../../UI/carousel/Carousel';
+import Collapse from '../../UI/collapse/Collapse';
 
 const Logement = () => {
     const [logement, setLogement] = useState([]);
@@ -28,8 +29,8 @@ const Logement = () => {
                     <Carousel pictures={item.pictures}/>
                     <h1>{item.title}</h1>
                     <p>{item.location}</p>
+                    <Collapse house__desc={item.description} house__equi={item.equipements}/>
                 </div>
-               
             ))}
         </div>
     );

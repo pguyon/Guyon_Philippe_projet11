@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ArrowLeft from '../arrow/ArrowLeft';
 import ArrowRight from '../arrow/ArrowRight';
 
+
 const Carousel = ({pictures}) => {
     const [currentImg , setCurrentImg] = useState(1)
 
@@ -32,7 +33,7 @@ const Carousel = ({pictures}) => {
       };
 
 
-    console.log(pictures);
+    
     return (
         <div className='carousel__wrapper'>
                 <div className='carousel__content'>
@@ -43,6 +44,7 @@ const Carousel = ({pictures}) => {
                     </div>
                     <button onClick={handleClickRight} className='arrow__right'><ArrowRight/></button>
                 </div>
+                
         </div>
     );
 }
