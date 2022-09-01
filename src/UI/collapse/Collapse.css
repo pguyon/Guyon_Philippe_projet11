@@ -53,3 +53,42 @@
     }
 }
 
+.second__collapse__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin: 40px auto;
+
+}
+
+.second__collapse__content,
+.second__collapse__title,
+.second__collapse__description {
+    width: 582px;
+}
+
+
+.second__collapse__description {
+    height: 149px;
+    padding: 20px 12px 53px 20px;
+}
+
+
+
+.second__collapse__title h2 {
+    margin-top: 5px;
+}
+
+.second__collapse__title h2,
+.second__collapse__description p,
+.second__collapse__description li
+{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.second__collapse__description li {
+    list-style-type: none;
+    animation: appear 0.5s;
+    color: #FF6060;
+}

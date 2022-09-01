@@ -29,7 +29,7 @@ const Logement = () => {
                     <Carousel pictures={item.pictures}/>
                     <h1>{item.title}</h1>
                     <p>{item.location}</p>
-                    <Collapse house__desc={item.description} house__equi={item.equipements}/>
+                    <Collapse house__desc={item.description} house__equi={item.equipments}/>
                 </div>
             ))}
         </div>

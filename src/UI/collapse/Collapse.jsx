@@ -18,6 +18,7 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
     setSecondShow(!secondShow)
   }
 
+  console.log(house__equi);
 
   if (location.pathname === "/about") {
     return (
@@ -38,29 +39,38 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
   }
   if (location.pathname !== "/about") {
     return (
-      <div>
-        <div className="collapse__title">
+      <div className="second__collapse__wrapper">
+        <div className="second__collapse__content">
+        <div className="collapse__title second__collapse__title">
           <h2>Description</h2>
           <button onClick={toggleHandler}>{show ? <ArrowUp /> : <ArrowDown />}</button>
         </div>
         {show ? (
-          <div className="collapse__description">
+          <div className="collapse__description second__collapse__description">
             <p>{house__desc}</p>
           </div>
         ) : (
           ""
         )}
-         <div className="collapse__title">
+        </div>
+        
+        <div className="second__collapse__content">
+        <div className="collapse__title second__collapse__title">
           <h2>Equipements</h2>
           <button onClick={secondToggleHandler}>{secondShow ? <ArrowUp /> : <ArrowDown />}</button>
         </div>
         {secondShow ? (
-          <div className="collapse__description">
-            <p>{house__desc}</p>
+          <div className="collapse__description second__collapse__description">
+            {house__equi.map((item) => (
+              <li>{item}</li>
+            ))}
           </div>
         ) : (
           ""
         )}
+
+        </div>
+     
       </div>
     );
   }
