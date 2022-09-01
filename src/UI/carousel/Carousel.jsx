@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './Carousel.css'
 import PropTypes from 'prop-types';
+import ArrowLeft from '../arrow/ArrowLeft';
+import ArrowRight from '../arrow/ArrowRight';
 
 const Carousel = ({pictures}) => {
     const [currentImg , setCurrentImg] = useState(1)
@@ -34,12 +36,12 @@ const Carousel = ({pictures}) => {
     return (
         <div className='carousel__wrapper'>
                 <div className='carousel__content'>
-                    <button onClick={handleClickLeft}>+</button>
+                    <button onClick={handleClickLeft} className='arrow__left'><ArrowLeft/></button>
                     <img className='carousel__img' src={pictures[currentImg - 1]} alt=''/>
                     <div>
                         {currentImg}/{pictures.length}
                     </div>
-                    <button onClick={handleClickRight}>-</button>
+                    <button onClick={handleClickRight} className='arrow__right'><ArrowRight/></button>
                 </div>
         </div>
     );

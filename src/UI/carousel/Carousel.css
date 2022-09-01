@@ -4,6 +4,7 @@
 }
 
 .carousel__content {
+    position: relative;
     display: flex;
 
 }
@@ -15,3 +16,25 @@
     border-radius: 25px;
     object-fit: cover;
 }
+
+.carousel__wrapper button {
+    width: 79px;
+    height: 60px;
+    background: transparent ;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow__left {
+    position: absolute;
+    top: 41%;
+    left: 0;
+}
+
+.arrow__right {
+    position: absolute;
+    top: 41%;
+    right: 10px;
+}
+
+
