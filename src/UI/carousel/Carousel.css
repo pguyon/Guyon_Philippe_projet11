@@ -1,12 +1,23 @@
 .carousel__wrapper {
     margin: auto;
     width: 1240px;
+    margin-top: 35px;
 }
 
 .carousel__content {
     position: relative;
     display: flex;
+    margin: auto;
+    width: 1240px;
+    height: 415px;
+    margin-top: 35px;
 
+}
+
+.carousel__content img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
 
