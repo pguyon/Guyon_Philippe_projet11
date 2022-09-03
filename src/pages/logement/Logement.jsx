@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom'
 import './Logement.css'
 import Carousel from '../../UI/carousel/Carousel';
 import Collapse from '../../UI/collapse/Collapse';
+import Error from '../error/Error';
 
 const Logement = () => {
     const [logement, setLogement] = useState([]);
@@ -22,18 +23,23 @@ const Logement = () => {
          const house = logement.filter((item) => item.id === id);
          console.log(house);
 
-    return (
-        <div>
-            {house.map((item) => (
-                <div key={item.id}>
-                    <Carousel pictures={item.pictures}/>
-                    <h1>{item.title}</h1>
-                    <p>{item.location}</p>
-                    <Collapse house__desc={item.description} house__equi={item.equipments}/>
+         if(house.length === 0){
+            return <Error/>
+         }else {
+            return (
+                <div>
+                    {house.map((item) => (
+                        <div key={item.id}>
+                            <Carousel pictures={item.pictures}/>
+                            <h1>{item.title}</h1>
+                            <p>{item.location}</p>
+                            <Collapse house__desc={item.description} house__equi={item.equipments}/>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
-    );
+            );
+         }
+ 
 }
 
 export default Logement;
