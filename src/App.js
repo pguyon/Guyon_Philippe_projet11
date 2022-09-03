@@ -16,9 +16,9 @@ function App() {
                     element={<Home/>}/>
                 <Route path="/about"
                     element={<About/>}/>
+                <Route exact path="/logement/:id" element={<Logement/>}/>
                 <Route path="*"
                     element={<Error/>}/>
-                <Route path="/logement/:id" element={<Logement/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
