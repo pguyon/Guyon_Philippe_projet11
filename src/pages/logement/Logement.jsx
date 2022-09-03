@@ -4,9 +4,11 @@ import './Logement.css'
 import Carousel from '../../UI/carousel/Carousel';
 import Collapse from '../../UI/collapse/Collapse';
 import Error from '../error/Error';
+import Loader from '../../UI/loader/Loader';
 
 const Logement = () => {
     const [logement, setLogement] = useState([]);
+    const [isLoading, setIsLoading] = useState(false)
     const {id} = useParams()
 
     useEffect(() => {
@@ -16,6 +18,7 @@ const Logement = () => {
           } )
           .then((data) => {
             setLogement(data);
+            setIsLoading(true)
           })
           .catch((err) => console.log(err));
       }, [id])
@@ -23,9 +26,12 @@ const Logement = () => {
          const house = logement.filter((item) => item.id === id);
          console.log(house);
 
-         if(house.length === 0){
+        if(!isLoading){
+            return <Loader />
+        }
+        else if(house.length === 0){
             return <Error/>
-         }else {
+        }else {
             return (
                 <div>
                     {house.map((item) => (
