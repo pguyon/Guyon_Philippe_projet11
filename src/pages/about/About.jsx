@@ -10,7 +10,7 @@ const About = () => {
 console.log(AboutData);
 
     return (
-        <main>
+        <main className='about__wrapper'>
             <Banner />
             {AboutData.map((item, index) => (
         <Collapse key={item[0] + index} title={item[0]} description={item[1]} />

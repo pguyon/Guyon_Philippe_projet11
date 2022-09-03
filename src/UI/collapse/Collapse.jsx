@@ -22,7 +22,7 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
 
   if (location.pathname === "/about") {
     return (
-      <div>
+      <div className="collapse__wrapper">
         <div className="collapse__title">
           <h2>{title}</h2>
           <button onClick={toggleHandler}>{show ? <ArrowUp /> : <ArrowDown />}</button>

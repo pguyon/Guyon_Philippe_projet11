@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom'
 const Banner = () => {
     const location = useLocation()
     return (
-        <div className='banner__wrapper'>
+        <div className='banner__wrapper banner__wrapper__about'>
             {location.pathname === '/' ? <img className='banner__img' src={Home} alt=''/> : <img className='banner__img' src={About} alt=''/>}
             {location.pathname === '/' ? <h1 className='banner__title'>Chez vous, partout et ailleurs</h1> : ''}
         </div>

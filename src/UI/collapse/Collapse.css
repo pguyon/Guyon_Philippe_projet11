@@ -92,3 +92,9 @@
     animation: appear 0.5s;
     color: #FF6060;
 }
+
+@media  screen and (max-width: 1240px) {
+    .collapse__title, .collapse__description {
+        width: 100%;
+    }
+}

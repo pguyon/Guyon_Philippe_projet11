@@ -39,13 +39,17 @@
 
 @media screen and (max-width: 1240px){
    .banner__wrapper {
-    height: 111px;
-    padding-left: 16px;
+    height: 111px; 
    } 
+
+   .banner__wrapper__about {
+    padding: 0;
+   }
 
   .banner__title{
     font-size: 24px;
     text-align: left;
     width: 217px;
+    margin-left: 16px;
   }
 }
