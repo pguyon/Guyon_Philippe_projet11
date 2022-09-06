@@ -1,0 +1,17 @@
+.profile__wrapper {
+    margin: 30px auto 0;
+    width: 1240px;
+    color: #FF6060;
+    line-height: 142.6%;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.profile__title {
+    font-size: 36px;
+}
+
+.profile__location {
+    font-size: 18px;
+    margin-top: 10px;
+}

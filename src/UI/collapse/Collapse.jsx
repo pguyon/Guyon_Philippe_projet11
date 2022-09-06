@@ -18,8 +18,6 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
     setSecondShow(!secondShow)
   }
 
-  console.log(house__equi);
-
   if (location.pathname === "/about") {
     return (
       <div className="collapse__wrapper">
@@ -61,8 +59,8 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
         </div>
         {secondShow ? (
           <div className="collapse__description second__collapse__description">
-            {house__equi.map((item) => (
-              <li>{item}</li>
+            {house__equi.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </div>
         ) : (

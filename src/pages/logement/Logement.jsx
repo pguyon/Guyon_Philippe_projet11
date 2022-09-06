@@ -5,6 +5,7 @@ import Carousel from '../../UI/carousel/Carousel';
 import Collapse from '../../UI/collapse/Collapse';
 import Error from '../error/Error';
 import Loader from '../../UI/loader/Loader';
+import Profile from '../../UI/profile/Profile';
 
 const Logement = () => {
     const [logement, setLogement] = useState([]);
@@ -24,7 +25,7 @@ const Logement = () => {
       }, [id])
         
          const house = logement.filter((item) => item.id === id);
-         console.log(house);
+         
 
         if(!isLoading){
             return <Loader />
@@ -37,8 +38,7 @@ const Logement = () => {
                     {house.map((item) => (
                         <div key={item.id}>
                             <Carousel pictures={item.pictures}/>
-                            <h1>{item.title}</h1>
-                            <p>{item.location}</p>
+                            <Profile houseData={house} />
                             <Collapse house__desc={item.description} house__equi={item.equipments}/>
                         </div>
                     ))}
