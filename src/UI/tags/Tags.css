@@ -1,7 +1,6 @@
 .tags__wrapper {
     display: flex;
     width: 365px;
-    justify-content: space-between;
 }
 
 
@@ -18,4 +17,5 @@
     font-size: 14px;
     line-height: 142.6%;
     padding-top: 3px;
+    margin-right: 10px;
 }
