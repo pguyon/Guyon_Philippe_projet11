@@ -56,7 +56,7 @@
 .second__collapse__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1240px;
+    max-width: 1240px;
     margin: 40px auto;
 
 }
@@ -96,5 +96,21 @@
 @media  screen and (max-width: 1240px) {
     .collapse__title, .collapse__description {
         width: 100%;
+    }
+
+    .second__collapse__wrapper {
+        flex-direction: column;
+    }
+
+    .second__collapse__content {
+        width: 100%;
+    }
+
+    .second__collapse__title h2,
+    .second__collapse__description p,
+    .second__collapse__description li
+    {
+        font-size: 12px;
+        line-height: 24px;
     }
 }

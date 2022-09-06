@@ -78,4 +78,8 @@
         width: 30px;
         height: 40px;
     }
+
+    .carousel__counter {
+        display: none;
+    }
 }
