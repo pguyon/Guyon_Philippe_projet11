@@ -13,3 +13,10 @@
 .stars__norating{
     margin: 10px 10px 0 0;
 }
+
+@media screen and (max-width: 1240px){
+    .stars__rating svg , .stars__norating svg{
+        width: 15px;
+        height: 15px;
+    }
+}

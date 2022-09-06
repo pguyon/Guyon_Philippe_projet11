@@ -1,6 +1,6 @@
 .profile__wrapper {
     margin: 30px auto 0;
-    width: 1240px;
+    max-width: 1240px;
     color: #FF6060;
     line-height: 142.6%;
     font-style: normal;
@@ -21,4 +21,25 @@
 .profile__location {
     font-size: 18px;
     margin: 15px 0 23px;
+}
+
+@media screen and (max-width: 1240px) {
+    .profile__content {
+        flex-direction: column;
+    }
+
+    .profile__content__first {
+        width: 100%;
+    }
+
+    .profile__title {
+        font-size: 18px;
+    }
+
+    .profile__description {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
 }

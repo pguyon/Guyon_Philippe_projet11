@@ -1,14 +1,14 @@
 .carousel__wrapper {
-    margin: auto;
-    width: 1240px;
-    margin-top: 35px;
+    margin: 35px auto 0;
+    max-width: 1240px;
+    
 }
 
 .carousel__content {
     position: relative;
     display: flex;
     margin: auto;
-    width: 1240px;
+    width: 100%;
     height: 415px;
     margin-top: 35px;
 
@@ -57,3 +57,25 @@
 }
 
 
+@media screen and (max-width: 1240px) {
+    .carousel__content {
+        height: 245px;
+    }
+
+    .arrow__left , .arrow__right{
+        width: 0px!important;
+    }
+
+    .arrow__right {
+        right: 10%;
+    }
+
+    .carousel__img {
+        height: 245px;
+    }
+
+    .arrow__left svg, .arrow__right svg {
+        width: 30px;
+        height: 40px;
+    }
+}

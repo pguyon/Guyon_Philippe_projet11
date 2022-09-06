@@ -16,3 +16,15 @@
     width: 64px;
     border-radius: 50%;
 }
+
+
+@media screen and (max-width: 1240px) {
+    .profile__name h2 {
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .profile__img__wrapper img {
+        width: 32px;
+    }
+}

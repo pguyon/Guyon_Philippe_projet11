@@ -34,7 +34,7 @@ const Logement = () => {
             return <Error/>
         }else {
             return (
-                <div>
+                <main>
                     {house.map((item) => (
                         <div key={item.id}>
                             <Carousel pictures={item.pictures}/>
@@ -42,7 +42,7 @@ const Logement = () => {
                             <Collapse house__desc={item.description} house__equi={item.equipments}/>
                         </div>
                     ))}
-                </div>
+                </main>
             );
          }
  
