@@ -5,7 +5,14 @@
     line-height: 142.6%;
     font-style: normal;
     font-weight: 500;
+    
 }
+
+.profile__content {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .profile__title {
     font-size: 36px;

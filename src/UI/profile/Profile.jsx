@@ -2,6 +2,7 @@ import React from 'react';
 import './Profile.css';
 import PropTypes from 'prop-types'
 import Tags from '../tags/Tags';
+import ProfileImg from '../profile_img/ProfileImg';
 
 const Profile = ({houseData}) => {
     console.log(houseData);
@@ -9,9 +10,14 @@ const Profile = ({houseData}) => {
         <section className='profile__wrapper'>
             {houseData.map((item) => (
                 <div key={item.id} className='profile__content'>
-                  <h1  className='profile__title'>{item.title}</h1>
-                  <p className='profile__location'>{item.location}</p>
-                  <Tags tags={item.tags}/>
+                    <div>
+                        <h1  className='profile__title'>{item.title}</h1>
+                        <p className='profile__location'>{item.location}</p>
+                        <Tags tags={item.tags}/>
+                    </div>
+                    <div className='profile__description'>
+                        <ProfileImg  host={item.host}/>
+                    </div>
                 </div>
             ))}
           

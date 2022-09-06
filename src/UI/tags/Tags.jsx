@@ -3,8 +3,6 @@ import './Tags.css';
 import PropTypes from 'prop-types';
 
 const Tags = ({tags}) => {
-
-    
     return (
         <section className='tags__wrapper'>
            {tags.map((item,index) => (

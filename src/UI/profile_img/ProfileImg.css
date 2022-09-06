@@ -1,0 +1,17 @@
+.profile__img__wrapper {
+    display: flex;
+}
+
+.profile__name h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    width: 93px;
+    margin-right: 10px;
+}
+
+.profile__img__wrapper img {
+    width: 64px;
+    border-radius: 50%;
+}
