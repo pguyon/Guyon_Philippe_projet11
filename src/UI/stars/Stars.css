@@ -1,0 +1,15 @@
+.stars__wrapper {
+    display: flex;
+}
+
+.stars__rating {
+    margin: 10px 10px 0 0;
+}
+
+.stars__rating path {
+    fill: #FF6060;
+}
+
+.stars__norating{
+    margin: 10px 10px 0 0;
+}

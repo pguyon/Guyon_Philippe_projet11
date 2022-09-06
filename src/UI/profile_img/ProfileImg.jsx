@@ -3,7 +3,7 @@ import './ProfileImg.css';
 import PropTypes from 'prop-types'
 
 const ProfileImg = ({host}) => {
-    console.log(host);
+    
     return (
         <section className='profile__img__wrapper'>
             <div className='profile__name'>

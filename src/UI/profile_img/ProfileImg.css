@@ -8,7 +8,8 @@
     font-size: 18px;
     line-height: 142.6%;
     width: 93px;
-    margin-right: 10px;
+    margin-right: 30px;
+    text-align: end;
 }
 
 .profile__img__wrapper img {

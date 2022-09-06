@@ -3,6 +3,8 @@ import './Profile.css';
 import PropTypes from 'prop-types'
 import Tags from '../tags/Tags';
 import ProfileImg from '../profile_img/ProfileImg';
+import Stars from '../stars/Stars'
+
 
 const Profile = ({houseData}) => {
     console.log(houseData);
@@ -17,6 +19,7 @@ const Profile = ({houseData}) => {
                     </div>
                     <div className='profile__description'>
                         <ProfileImg  host={item.host}/>
+                        <Stars rating={item.rating}/>
                     </div>
                 </div>
             ))}
