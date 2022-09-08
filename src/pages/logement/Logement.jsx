@@ -24,7 +24,8 @@ const Logement = () => {
           .catch((err) => console.log(err));
       }, [id])
         
-         const house = logement.filter((item) => item.id === id);
+    /* Filtering the array of objects to find the one that matches the id. */
+    const house = logement.filter((item) => item.id === id);
          
 
         if(!isLoading){
