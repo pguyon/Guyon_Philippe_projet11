@@ -10,6 +10,10 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
   const [secondShow, setSecondShow] = useState(false);
   const location = useLocation();
 
+ /**
+  * The toggleHandler function is a function that sets the show state to the opposite of what it
+  * currently is.
+  */
   const toggleHandler = () => {
     setShow(!show);
   };
@@ -18,6 +22,8 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
     setSecondShow(!secondShow)
   }
 
+  /* Checking if the pathname is equal to "/about" and if it is, it will return the code inside the
+  return statement. */
   if (location.pathname === "/about") {
     return (
       <div className="collapse__wrapper">
@@ -35,6 +41,8 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
       </div>
     );
   }
+
+
   if (location.pathname !== "/about") {
     return (
       <div className="second__collapse__wrapper">
@@ -51,7 +59,6 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
           ""
         )}
         </div>
-        
         <div className="second__collapse__content">
         <div className="collapse__title second__collapse__title">
           <h2>Equipements</h2>
@@ -66,9 +73,7 @@ const Collapse = ({ title, description, house__desc, house__equi }) => {
         ) : (
           ""
         )}
-
         </div>
-     
       </div>
     );
   }

@@ -9,10 +9,12 @@ const Carousel = ({pictures}) => {
     const [currentImg , setCurrentImg] = useState(1)
 
 
+  /* If there are no pictures, then return an empty string. */
     if (pictures.length === 0) {
         return "";
       }
     
+   /* If there is only one picture, it will return the picture. */
     if (pictures.length === 1) {
         return (
           <div className='carousel__content'>
@@ -21,18 +23,26 @@ const Carousel = ({pictures}) => {
         );
     }
 
+   /**
+    * If the current image is 1, then return the current image as the length of the pictures array.
+    * Otherwise, set the current image to the previous image.
+    * @returns the value of the currentImg.
+    */
     const handleClickLeft = () => {
         if (currentImg === 1) return setCurrentImg(pictures.length);
         setCurrentImg((prevCount) => prevCount - 1);
       };
 
 
+  /**
+   * If the current image is the last image, then return the first image. Otherwise, return the next
+   * image.
+   * @returns The currentImg is being returned.
+   */
       const handleClickRight = () => {
         if (currentImg === pictures.length) return setCurrentImg(1);
         setCurrentImg((prevCount) => prevCount + 1);
       };
-
-
     
     return (
         <div className='carousel__wrapper'>
@@ -44,7 +54,6 @@ const Carousel = ({pictures}) => {
                     </div>
                     <button onClick={handleClickRight} className='arrow__right'><ArrowRight/></button>
                 </div>
-                
         </div>
     );
 }

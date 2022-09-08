@@ -5,9 +5,6 @@ import AboutData from '../../data/AboutData.js'
 import Collapse from '../../UI/collapse/Collapse';
 
 const About = () => {
-    
-
-console.log(AboutData);
 
     return (
         <main className='about__wrapper'>

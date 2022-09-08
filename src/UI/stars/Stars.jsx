@@ -8,6 +8,10 @@ const Stars = ({rating}) => {
     const numberRating = rating;
 
 
+  /* Returning a div with a class name of stars__wrapper. It is also mapping over the starsContainer
+  array and returning a div with a class name of stars__rating if the index is less than the
+  numberRating. If the index is not less than the numberRating it is returning a div with a class
+  name of stars__norating. */
     return (
         <div className="stars__wrapper">
             {starsContainer.map((item, index) => {
